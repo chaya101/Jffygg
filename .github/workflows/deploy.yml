@@ -161,7 +161,6 @@ jobs:
 
   verify:
     runs-on: ubuntu-latest
-    needs: provision
     if: needs.configure.result == 'success'
     needs:
       - provision
